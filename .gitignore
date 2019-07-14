@@ -1,0 +1,16 @@
+#Don't track this folders
+/res
+/.vs
+
+*.dll
+#Don't track this folders
+/res
+/.vs
+
+*.dll
+#Don't track this folders
+/res
+/.vs
+
+*.dll
+
