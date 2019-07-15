@@ -1,16 +1,9 @@
 #Don't track this folders
 /res
 /.vs
+*/bin
+*/obj
 
 *.dll
-#Don't track this folders
-/res
-/.vs
 
-*.dll
-#Don't track this folders
-/res
-/.vs
-
-*.dll
 
