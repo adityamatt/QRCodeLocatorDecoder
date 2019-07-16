@@ -16,9 +16,9 @@ namespace QRManager
 
         static void Main(string[] args)
         {
-            string[] output = QRCodeDecoder.DecodeQR(qr_path2);
-            foreach (string d in output) Console.WriteLine(d);
-            Console.ReadKey();
+            //string[] output = QRCodeDecoder.DecodeQR(qr_path2);
+            //foreach (string d in output) Console.WriteLine(d);
+            //Console.ReadKey();
         }
     }
 }

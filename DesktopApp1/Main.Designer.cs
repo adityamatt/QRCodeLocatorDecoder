@@ -65,9 +65,9 @@ namespace DesktopApp1
             // richTextBox1
             // 
             this.richTextBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.richTextBox1.Location = new System.Drawing.Point(12, 454);
+            this.richTextBox1.Location = new System.Drawing.Point(12, 414);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(1224, 67);
+            this.richTextBox1.Size = new System.Drawing.Size(1224, 107);
             this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "";
             // 
@@ -75,7 +75,7 @@ namespace DesktopApp1
             // 
             this.ImageBox1.Location = new System.Drawing.Point(12, 53);
             this.ImageBox1.Name = "ImageBox1";
-            this.ImageBox1.Size = new System.Drawing.Size(1224, 395);
+            this.ImageBox1.Size = new System.Drawing.Size(1224, 355);
             this.ImageBox1.TabIndex = 2;
             this.ImageBox1.TabStop = false;
             // 

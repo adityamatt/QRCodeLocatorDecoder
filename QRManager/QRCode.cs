@@ -1,17 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Emgu.CV;
-using Emgu.CV.Structure;
-using OnBarcode.Barcode.BarcodeScanner;
-using Emgu.CV.OCR;
-using Emgu.CV.Util;
-using Emgu.CV.CvEnum;
-using IronOcr;
-using Emgu.CV.UI;
+using Inlite.ClearImageNet;
 
 namespace QRManager
 {
@@ -150,15 +139,27 @@ namespace QRManager
 
     public class QRCodeDecoder
     {
-        public static string[] DecodeQR(string input)
+        public static Tuple<string, Rectangle>[] DecodeQR(string input)
         {
-            string[] datas = BarcodeScanner.Scan(input, BarcodeType.QRCode);
+            Tuple<string, Rectangle>[] datas = DecodeQR(new Bitmap(input));
             return datas;
         }
-        public static string[] DecodeQR(Bitmap input)
+        public static Tuple<string,Rectangle>[] DecodeQR(Bitmap input)
         {
-            string[] datas = BarcodeScanner.Scan(input, BarcodeType.QRCode);
-            return datas;
+            BarcodeReader reader = new BarcodeReader();
+            reader.QR = true;
+            Barcode[] barcodes = reader.Read(input);
+            Tuple<string,Rectangle>[] output = new Tuple<string, Rectangle>[barcodes.Length];
+            int i = 0;
+            foreach (Barcode bc in barcodes)
+            {
+
+                Rectangle QrLocation = bc.Rectangle;
+                output[i] = new Tuple<string,Rectangle>(bc.Text,QrLocation);
+                i++;
+            }
+            if (output.Length == 0) return null; 
+            return output;
         }
     }
 }

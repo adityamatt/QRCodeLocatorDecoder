@@ -42,22 +42,37 @@ namespace DesktopApp1
             if (open.ShowDialog() == DialogResult.OK)
             {
                 // display image in picture box  
+                Image<Bgr, byte> displayImage = new Image<Bgr, byte>(open.FileName);
                 richTextBox1.Text = "";
-                this.ImageBox1.Image = new Image<Bgr, byte>(open.FileName);
-                String[] data = QRCodeDecoder.DecodeQR(this.ImageBox1.Image.Bitmap);
+               
+                Tuple<string, Rectangle>[] data = QRCodeDecoder.DecodeQR(displayImage.ToBitmap());
                 int i = 1;
-                if (data != null)
-                {
-                    foreach (string s in data)
+                if (data!=null)
+                { 
+                    foreach (Tuple<String,Rectangle> info in data)
                     {
-                        richTextBox1.Text += i.ToString() + "." + s + "\n";
-                        i++;
+                        try
+                        {
+                            String text = info.Item1;
+                            Rectangle location = info.Item2;
+                            CvInvoke.Rectangle(displayImage, location, new MCvScalar(0, 0, 255), 3);
+                            Point leftTop = new Point(location.X, location.Y+location.Height);
+                            CvInvoke.PutText(displayImage, i.ToString(), leftTop, Emgu.CV.CvEnum.FontFace.HersheyComplex, 1, new MCvScalar(0, 0, 255), 3);
+                            richTextBox1.Text += i.ToString() + "." + text + "\n";
+                            i++;
+                        }
+                        catch (Exception)
+                        {
+                            continue;
+                        }
+                        
                     }
                 }
                 else
                 {
                     richTextBox1.Text = "No Valid QR code detected or maybe its too destroyred to be read";
                 }
+                this.ImageBox1.Image = displayImage;
                 // image file path  
             }
         }
