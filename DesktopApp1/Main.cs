@@ -38,7 +38,7 @@ namespace DesktopApp1
         private void SelectImageandDecodeQR_Button(object sender, EventArgs e)
         {
             OpenFileDialog open = new OpenFileDialog();
-            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+            //open.Filter = "Image Files(*.jpg; *.png ; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
             if (open.ShowDialog() == DialogResult.OK)
             {
                 // display image in picture box  
@@ -46,10 +46,17 @@ namespace DesktopApp1
                 this.ImageBox1.Image = new Image<Bgr, byte>(open.FileName);
                 String[] data = QRCodeDecoder.DecodeQR(this.ImageBox1.Image.Bitmap);
                 int i = 1;
-                foreach(string s in data)
+                if (data != null)
                 {
-                    richTextBox1.Text += i.ToString() + "." + s+"\n";
-                    i++;
+                    foreach (string s in data)
+                    {
+                        richTextBox1.Text += i.ToString() + "." + s + "\n";
+                        i++;
+                    }
+                }
+                else
+                {
+                    richTextBox1.Text = "No Valid QR code detected or maybe its too destroyred to be read";
                 }
                 // image file path  
             }
