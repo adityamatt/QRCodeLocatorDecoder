@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopApp1", "DesktopApp1\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QRManager", "QRManager\QRManager.csproj", "{AE00433D-36DD-4CE4-A82E-F680F7183B4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QRCodeDecoderLibrary", "QRCodeDecoderLibrary\QRCodeDecoderLibrary.csproj", "{609656C8-4550-40D0-B039-999CEC29F37D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{AE00433D-36DD-4CE4-A82E-F680F7183B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE00433D-36DD-4CE4-A82E-F680F7183B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE00433D-36DD-4CE4-A82E-F680F7183B4F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{609656C8-4550-40D0-B039-999CEC29F37D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{609656C8-4550-40D0-B039-999CEC29F37D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{609656C8-4550-40D0-B039-999CEC29F37D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{609656C8-4550-40D0-B039-999CEC29F37D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
