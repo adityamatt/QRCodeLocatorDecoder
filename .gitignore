@@ -1,5 +1,5 @@
 #Don't track this folders
-/.vs
+
 QRManager/bin/
 DesktopApp1/bin/
 QRManager/obj/
