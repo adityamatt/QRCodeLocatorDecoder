@@ -1,5 +1,7 @@
+C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\res\frame.png
 C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\res\psn1.jpg
 C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\res\psnU.png
+C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\res\Test.png
 C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\x64\concrt140.dll
 C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\x64\cvextern.dll
 C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\x64\msvcp140.dll
@@ -10,9 +12,11 @@ C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\x86\cvextern.dll
 C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\x86\msvcp140.dll
 C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\x86\opencv_ffmpeg410.dll
 C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\x86\vcruntime140.dll
+C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\QRManager.dll.config
+C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\QRManager.dll
 C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\QRManager.pdb
+C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\ClearImageNet.70.dll
 C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\Emgu.CV.World.dll
-C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\MessagingToolkit.QRCode.dll
 C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\System.Drawing.Common.dll
 C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\ZedGraph.dll
 C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\Emgu.CV.World.xml
@@ -33,12 +37,5 @@ C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\zh-tw\ZedGraph.resources.
 C:\Users\Asus\source\repos\QR_code\QRManager\obj\Debug\QRManager.csprojAssemblyReference.cache
 C:\Users\Asus\source\repos\QR_code\QRManager\obj\Debug\QRManager.csproj.CoreCompileInputs.cache
 C:\Users\Asus\source\repos\QR_code\QRManager\obj\Debug\QRManager.csproj.CopyComplete
-C:\Users\Asus\source\repos\QR_code\QRManager\obj\Debug\QRManager.pdb
-C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\res\frame.png
-C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\res\Test.png
-C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\IronOcr.dll
-C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\IronOcr.xml
-C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\ClearImageNet.70.dll
-C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\QRManager.dll.config
-C:\Users\Asus\source\repos\QR_code\QRManager\bin\Debug\QRManager.dll
 C:\Users\Asus\source\repos\QR_code\QRManager\obj\Debug\QRManager.dll
+C:\Users\Asus\source\repos\QR_code\QRManager\obj\Debug\QRManager.pdb

@@ -1,8 +1,9 @@
 #Don't track this folders
-/res
 /.vs
-*/bin
-*/obj
+QRManager/bin/
+DesktopApp1/bin/
+QRManager/obj/
+DesktopApp1/obj/
 
 *.dll
 
